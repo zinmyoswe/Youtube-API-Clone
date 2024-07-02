@@ -1,0 +1,146 @@
+/* Global styles for the shorts container */
+.shorts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  /* height: 100vh; */
+  padding: 0;
+  background: #000; 
+}
+
+/* Styles for each shorts video */
+.shorts-video {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Responsive width */
+  height: 100vh; /* Fullscreen height for mobile */
+  margin-bottom: 0;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center; /* Center video horizontally */
+  justify-content: center; /* Center video vertically */
+}
+
+/* Video player styles */
+.shorts-video iframe,
+.shorts-video #player {
+  width: 100%;
+  height: 100%;
+}
+
+/* Video info styles */
+.shorts-video-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 90%;
+  word-wrap: break-word;
+  z-index: 1; /* Ensure info is on top of video */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video title styles */
+.shorts-video-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+/* Channel name styles */
+.shorts-video-info h3 {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 600px) {
+  .shorts-container {
+    padding: 0;
+  }
+
+  .shorts-video-info {
+    font-size: 1em;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .shorts-video-info h2 {
+    font-size: 1em;
+  }
+
+  .shorts-video-info h3 {
+    font-size: 0.8em;
+  }
+}
+
+/* Styles for tablet screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .shorts-container {
+    padding: 0;
+  }
+
+  .shorts-video {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .shorts-video-info {
+    font-size: 1.1em;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .shorts-video-info h2 {
+    font-size: 1.1em;
+  }
+
+  .shorts-video-info h3 {
+    font-size: 0.85em;
+  }
+}
+
+/* Styles for desktop screens */
+@media (min-width: 1025px) {
+  .shorts-container {
+    padding: 0;
+  }
+
+  .shorts-video {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .shorts-video-info {
+    font-size: 1.2em;
+    bottom: 10px;
+    left: 10px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .shorts-video-info h2 {
+    font-size: 1.2em;
+  }
+
+  .shorts-video-info h3 {
+    font-size: 0.9em;
+  }
+}

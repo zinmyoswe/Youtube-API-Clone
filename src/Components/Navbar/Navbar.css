@@ -1,0 +1,276 @@
+/* nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo{
+    width: 130px;
+}
+
+.nav-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.nav-middle .search-box img{
+    width: 18px;
+}
+
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right .user-icon{
+    width: 35px;
+    border-radius: 50%;
+} */
+
+
+ /* Navbar.css */
+
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Background color for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-left,
+  .nav-middle,
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+}
+  
+  .logo {
+    height: 30px;
+    width: auto;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 20px;
+    width: 400px;
+    height: 33px;
+    padding: 5px 10px;
+  }
+  
+  .search-box input {
+    border: none;
+    background: transparent;
+    padding: 8px 10px;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    color: black; /* Dark text color */
+  }
+  
+  .search-icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Navbar Icons */
+  .nav-icon {
+    height: 24px;
+    width: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .nav-short-icon {
+    height: 34px;
+    width: 34px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .user-icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    background-color: #ffffff; /* Background color for dropdown */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu a {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+  }
+  
+  .dropdown-menu p {
+    margin: 0;
+    color: #666; /* Lighter text color */
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  
+    .nav-left {
+      display: flex;
+      margin-bottom: 10px;
+    }
+  
+    .nav-middle {
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
+      width: 50%;
+      /* margin-bottom: 10px; */
+    }
+    .nav-middle .search-box{
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      padding: 8px 12px;
+      border-radius: 25px;
+  }
+  
+  .nav-middle .search-box input{
+      width: 100px;
+      height: 10px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+  }
+  
+  .nav-middle .search-box img{
+      width: 16px;
+  }
+  
+    .search-box {
+      width: 100%;
+      padding: 5px 10px;
+    }
+  
+    .search-icon {
+      height: 20px;
+      width: 20px;
+    }
+  
+    .nav-right {
+      width: 30%;
+      
+      margin-top: 0px;
+    }
+  
+    .nav-icon {
+      height: 18px;
+      width: 18px;
+    }
+
+    .nav-short-icon {
+      height: 28px;
+      width: 28px;
+    }
+  
+    .user-icon {
+      height: 26px;
+      width: 26px;
+    }
+    .nav-left .menu-icon{
+      width: 20px;
+      margin-right: 10px;
+  }
+  
+  .nav-left .logo{
+      height: 25px;
+  }
+  .nav-right{
+    display: flex;
+  }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+      padding: 10px 30px;
+    }
+  
+    .logo {
+      height: 50px;
+    }
+  
+    .search-box {
+      padding: 8px 12px;
+    }
+  
+    .search-icon {
+      height: 26px;
+      width: 26px;
+    }
+  
+    .nav-icon {
+      height: 22px;
+      width: 22px;
+    }
+
+    .nav-short-icon {
+      height: 32px;
+      width: 32px;
+    }
+  
+    .user-icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  
