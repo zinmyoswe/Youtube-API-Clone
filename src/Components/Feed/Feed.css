@@ -59,21 +59,21 @@
 }
 
 @media (max-width: 768px) {
-    .feed {
+    /* .feed {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         margin-top: 50px;
-    }
+    } */
 
     .card h2 {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .card h3 {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .card p {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
